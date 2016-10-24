@@ -9,11 +9,11 @@ This example uses scala to generate the client stubs -
 
 To generate the client side stub :
 
-1. Make sure the swagger specification is available at https://<appname>/api-docs/swagger.json
+1. Make sure the swagger specification is available at https://appname/api-docs/swagger.json
 2. Download the swagger-codegen available at https://github.com/swagger-api/swagger-codegen
 3. Build the project using "mvn package"
 4. From this project location. generate the client stubs using the below command
- java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i https://<appname>/api-docs/swagger.json -l scala -o ../scala-employee-service-client
+ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i https://appname/api-docs/swagger.json -l scala -o ../scala-employee-service-client
 
  where -l denotes the language for the client stub generation 
     -o denotes the output folder where the server stubs get generated
